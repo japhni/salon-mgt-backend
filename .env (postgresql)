@@ -1,0 +1,5 @@
+DATASOURCE_URL=jdbc:postgresql://localhost:5432/salon_mgt
+DATASOURCE_USER=postgres
+DATASOURCE_PASSWORD=Japhni81@
+MYSQL_DRIVER=org.postgresql.Driver
+PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
