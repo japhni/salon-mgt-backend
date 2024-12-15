@@ -43,7 +43,7 @@ public class CustomerService {
 
 		customer.setPassword(customer.getPassword()== null ? passwordEncoder.encode("123456"): passwordEncoder.encode(customer.getPassword()));
 		System.out.println(customer.getPassword());
-		Role userRole = roleRepository.findByName("ROLE_CLIENT").get();
+		Role userRole = roleRepository.findByName("ROLE_CUSTOMER").get();
 		customer.setRoles(Collections.singletonList(userRole));
 
 		return customerRepository.save(customer);
